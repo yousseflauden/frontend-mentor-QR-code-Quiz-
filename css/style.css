@@ -1,0 +1,78 @@
+/* ************ Genral *************** */
+body{
+    background-color: var(--bodycolor);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ************ variabel *************** */
+:root{
+    --bodycolor: rgb( 213, 225, 239) ;
+    --cardcolor: rgb(255, 255, 255);
+    --cardwidth: 295px;
+    --cardwidth-mob: 320px;
+    --cardheight: 460px;
+    --cardheight-mob: 500px;
+    --imgwidth:265px;
+    --imgwidth-mob:290px;
+    --imgheight:265px;
+    --imgheight-mob:290px;
+    --txt1: rgb(36, 49, 78);
+    --txt2: rgb(180, 182, 188);
+}
+
+
+
+/* ************ design *************** */
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--cardcolor);
+    width: var(--cardwidth);
+    height: var(--cardheight);
+    border-radius: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.card img{
+    width: var(--imgwidth);
+    height: var(--imgheight);
+    border-radius: 5%;
+    margin-top: 20px;
+}
+.txt pre{
+    color: var(--txt1);
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+.txt2 pre{
+    color: var(--txt2);
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    margin-top: -20px;
+}
+
+
+
+
+/* ************ media *************** */
+@media (max-width:950px) {
+    .card{
+        width: var(--cardwidth-mob);
+        height: var(--cardheight-mob);
+    }
+    .card img{
+        width: var(--imgwidth-mob);
+        height: var(--imgheight-mob);
+        margin-top: 10px;
+    }
+}
